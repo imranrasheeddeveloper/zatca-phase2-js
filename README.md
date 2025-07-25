@@ -1,25 +1,25 @@
 # zatca-phase2-js
 
-**ZATCA Phase 2 JavaScript SDK**  
+**ZATCA Phase 2 JavaScript SDK**
 A Node.js client library for Saudi ZATCA e‑invoicing Phase 2 (UBL invoice generation, signing & submission).
 
 ## Features
 
-- CSR/key generation (RSA 2048 + PEM/DER)  
-- Builds UBL‑compliant XML invoices & credit notes  
-- Inserts CSID, ICV/PIH, InstructionNote  
-- Enveloped XML‑DSIG signing (RSA‑SHA256)  
-- Submits to ZATCA compliance & clearance/reporting endpoints  
+* CSR/key generation (RSA 2048 + PEM/DER)
+* Builds UBL‑compliant XML invoices & credit notes
+* Inserts CSID, ICV/PIH, InstructionNote
+* Enveloped XML‑DSIG signing (RSA‑SHA256)
+* Submits to ZATCA compliance & clearance/reporting endpoints
 
 ## Installation
 
 ```bash
 npm install
-
+```
 
 ## Usage
 
-### Onboard (get CSR + key)
+### Onboard (get CSR + key)
 
 ```js
 const { ZatcaClient } = require('zatca-phase2-js');
@@ -31,7 +31,7 @@ const { ZatcaClient } = require('zatca-phase2-js');
 })();
 ```
 
-### Compliance & Production CSID
+### Compliance & Production CSID
 
 ```js
 await client.complianceCsid({ privateKey, csr, OTP: '123456' });
@@ -42,8 +42,8 @@ await client.productionCsid();
 
 ```js
 const invoiceData = require('./examples/invoice.json');
-const customer   = require('./examples/customer.json');
-const result = await client.report(invoiceData, customer, 'STDSI');
+const customer    = require('./examples/customer.json');
+const result      = await client.report(invoiceData, customer, 'STDSI');
 console.log(result);
 ```
 
@@ -56,4 +56,4 @@ console.log(result);
 
 1. Fork the repo
 2. Create a feature branch
-3. Submit a PR# zatca-phase2-js
+3. Submit a PR
