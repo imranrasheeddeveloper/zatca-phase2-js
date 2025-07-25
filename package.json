@@ -1,0 +1,21 @@
+{
+  "name": "zatca-phase2",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "onboard": "node examples/onboard.js",
+    "report": "node examples/report-invoice.js"
+  },
+  "dependencies": {
+    "@xmldom/xmldom": "^0.9.8",
+    "axios": "^1.4.0",
+    "axios-retry": "^3.3.1",
+    "jsrsasign": "^10.8.5",
+    "node-forge": "^1.3.1",
+    "pem": "^1.14.8",
+    "uuid": "^9.0.0",
+    "xml-crypto": "^2.1.3",
+    "xmlbuilder2": "^3.0.2",
+    "xpath": "^0.0.32"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "csr": {
+    "csr.common.name": "example.com",
+    "csr.organization.name": "ExampleCorp",
+    "csr.organization.unit.name": "Development",
+    "csr.country.name": "SA"
+  },
+  "ICV": "0",
+  "PIH": "0",
+  "vatRate": 15,
+  "supplier": {
+    "id": "1234567890",
+    "legal_name": "Example Supplier Co.",
+    "tax_id": "300000000000000",
+    "address": {
+      "street": "123 Example Street",
+      "building_number": "456",
+      "city_subdivision": "Sample District",
+      "city": "Sample City",
+      "postal_zone": "11111"
+    }
+  },
+  "complianceCsidUrl":  "https://gw-fatoora.zatca.gov.sa/e-invoicing/simulation/compliance",
+  "complianceChecksUrl":"https://gw-fatoora.zatca.gov.sa/e-invoicing/simulation/compliance/invoices",
+  "productionCsidUrl":  "https://gw-fatoora.zatca.gov.sa/e-invoicing/simulation/production/csids",
+  "reportingUrl":       "https://gw-fatoora.zatca.gov.sa/e-invoicing/simulation/invoices/reporting/single",
+  "clearanceUrl":       "https://gw-fatoora.zatca.gov.sa/e-invoicing/simulation/invoices/clearance/single"
+}
