@@ -1,7 +1,6 @@
-````markdown
 # zatca-phase2-js
 
-**ZATCA Phase 2 JavaScript SDK**  
+**ZATCA Phase 2 JavaScript SDK**  
 A Node.js client library for Saudi ZATCA e‑invoicing Phase 2 (UBL invoice generation, signing & submission).
 
 ## Features
@@ -16,7 +15,7 @@ A Node.js client library for Saudi ZATCA e‑invoicing Phase 2 (UBL invoice gen
 
 ```bash
 npm install
-````
+
 
 ## Usage
 
